@@ -417,7 +417,7 @@ def proximity():
     # --- validate inputs ---
     lat_str = request.args.get("latitude")
     lon_str = request.args.get("longitude")
-    radius  = request.args.get("radius", 1000)  # optional, default 1 km
+    radius  = request.args.get("radius", 7500)  # optional, default 1 km
 
     if not lat_str or not lon_str:
         return jsonify({"error": "Missing required parameters: lat and lon"}), 400
