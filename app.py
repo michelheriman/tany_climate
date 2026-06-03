@@ -272,10 +272,17 @@ def season_analysis(longitude, latitude):
 # ── helpers ────────────────────────────────────────────────────────────────────
 
 OVERPASS_SERVERS = [
+    "https://overpass.kumi.systems/api/interpreter",
+    "https://overpass.openstreetmap.fr/api/interpreter", 
+    "https://overpass.osm.rambler.ru/cgi/interpreter"
+]
+'''
+[
     "https://overpass-api.de/api/interpreter",
     "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",
 ]
+'''
 
 def haversine(lat1, lon1, lat2, lon2):
     R = 6371000
